@@ -5,14 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {ResponsiveModule} from "ng2-responsive";
-import { MainDesktopComponent } from './desktop/main-desktop/main-desktop.component';
-import { MainMobileComponent } from './mobile/main-mobile/main-mobile.component';
+import { AppDesktopComponent } from './desktop/app-desktop.component';
+import { AppMobileComponent } from './mobile/app-mobile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainDesktopComponent,
-    MainMobileComponent
+    AppDesktopComponent,
+    AppMobileComponent
   ],
   imports: [
     BrowserModule,
