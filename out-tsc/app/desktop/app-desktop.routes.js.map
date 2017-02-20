@@ -1,0 +1,1 @@
+{"version":3,"file":"app-desktop.routes.js","sourceRoot":"","sources":["app-desktop.routes.ts"],"names":[],"mappings":"OAAO,EAAS,YAAY,EAAC,MAAM,iBAAiB;OAE7C,EAAC,mBAAmB,EAAC,MAAM,yBAAyB;AAE3D,IAAM,cAAc,GAAW;IAC3B,EAAE,IAAI,EAAE,EAAE,EAAE,SAAS,EAAE,mBAAmB,EAAE;CAC/C,CAAC;AAEF,OAAO,IAAM,eAAe,GAAG,YAAY,CAAC,QAAQ,CAAC,cAAc,CAAC,CAAC"}
