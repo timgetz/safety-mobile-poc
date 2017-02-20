@@ -5,20 +5,26 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {ResponsiveModule} from "ng2-responsive";
-import { AppDesktopComponent } from './desktop/app-desktop.component';
-import { AppMobileComponent } from './mobile/app-mobile.component';
+import {AppDesktopModule} from "./desktop/app-desktop.module";
+import {AppMobileModule} from "./mobile/app-mobile.module";
+import {AppRounting} from "./app.routes";
+import { DesktopTestComponent } from './desktop-test.component';
+import { MobileTestComponent } from './mobile-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppDesktopComponent,
-    AppMobileComponent
+    DesktopTestComponent,
+    MobileTestComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    ResponsiveModule
+    ResponsiveModule,
+    AppDesktopModule,
+    AppMobileModule,
+    AppRounting
   ],
   providers: [],
   bootstrap: [AppComponent]

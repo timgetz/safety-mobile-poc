@@ -1,6 +1,35 @@
 <!--<app-main-desktop *showItBrowser="['safari']"></app-main-desktop>-->
 <!--<app-main-mobile *showItBrowser="['chrome','firefox']"></app-main-mobile>-->
 
-<st-app-desktop *isDesktop></st-app-desktop>
-<st-app-mobile *isMobile></st-app-mobile>
+<!--<template *isDesktop (change)="onScreenSizeDesktop($event)">-->
+<!--</template>-->
 
+<!--<template *isMobile (change)="onScreenSizeMobile($event)">-->
+<!--</template>-->
+
+
+<!--<template [responsive]="{-->
+                <!--device: 'desktop'-->
+            <!--}"-->
+          <!--(changes)="onScreenSizeDesktop($event)">-->
+<!--</template>-->
+
+<!--<template [responsive]="{-->
+                <!--device: 'mobile'-->
+            <!--}"-->
+          <!--(changes)="onScreenSizeMobile($event)">-->
+
+<!--</template>-->
+
+<st-desktop-test *isDesktop></st-desktop-test>
+<st-mobile-test *isMobile></st-mobile-test>
+
+
+<router-outlet></router-outlet>
+
+
+<!--<st-app-mobile *isMobile></st-app-mobile>-->
+
+<!--<div *isDesktop>-->
+    <!--<st-app-desktop></st-app-desktop>-->
+<!--</div>-->
