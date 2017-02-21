@@ -10,6 +10,7 @@ export class AppMobileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("AppMobileComponent onInit()");
   }
 
 }

@@ -7,6 +7,7 @@ import {Router} from "@angular/router";
     <p>
       desktop-test Works!
     </p>
+    <router-outlet></router-outlet>
   `,
   styles: []
 })
@@ -19,6 +20,7 @@ export class DesktopTestComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log("DesktopTestComponent onInit()");
     this._router.navigate(['/desktop']);
   }
 
