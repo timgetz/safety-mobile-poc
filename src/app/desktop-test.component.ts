@@ -20,8 +20,8 @@ export class DesktopTestComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log("DesktopTestComponent onInit()");
-    this._router.navigate(['/desktop']);
+    // console.log("DesktopTestComponent onInit()");
+    // this._router.navigate(['/desktop']);
   }
 
 

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -10,12 +10,20 @@ import {AppMobileModule} from "./mobile/app-mobile.module";
 import {AppRounting} from "./app.routes";
 import { DesktopTestComponent } from './desktop-test.component';
 import { MobileTestComponent } from './mobile-test.component';
+import { SignInComponent } from './authentication/sign-in.component';
+import { SignUpComponent } from './authentication/sign-up.component';
+import { HeaderComponent } from './shared/header.component';
+import {AuthService} from "./shared/auth.service";
+import {AuthGuard} from "./shared/auth.guard";
 
 @NgModule({
   declarations: [
     AppComponent,
     DesktopTestComponent,
-    MobileTestComponent
+    MobileTestComponent,
+    SignInComponent,
+    SignUpComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -24,9 +32,13 @@ import { MobileTestComponent } from './mobile-test.component';
     ResponsiveModule,
     AppDesktopModule,
     AppMobileModule,
-    AppRounting
+    AppRounting,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

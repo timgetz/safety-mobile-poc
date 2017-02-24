@@ -10,5 +10,17 @@
 </head>
 <body>
   <app-root>Loading...</app-root>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+  <script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyCA7RDGTUUbImJuJ4loO_neVhYsYizRgXE",
+          authDomain: "safety-auth.firebaseapp.com",
+          databaseURL: "https://safety-auth.firebaseio.com",
+          messagingSenderId: "975889633232"
+      };
+      firebase.initializeApp(config);
+  </script>
 </body>
 </html>
