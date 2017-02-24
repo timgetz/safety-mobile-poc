@@ -11,9 +11,8 @@ import {AuthService} from "./auth.service";
                     <ul class="nav navbar-nav">
         
 
-                        <li><a [routerLink]="['m']">Mobile Site</a></li>
-                        <li><a [routerLink]="['home']">Desktop Site</a></li>
-                        <li><a [routerLink]="['protected']">Protected</a></li>
+                        <li><a [routerLink]="['/m']">Mobile Site</a></li>
+                        <li><a [routerLink]="['/home']">Desktop Site</a></li>
         
                     </ul>
                     <ul class="nav navbar-nav navbar-right" *ngIf="isAuth()">
