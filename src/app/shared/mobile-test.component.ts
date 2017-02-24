@@ -7,7 +7,7 @@ import {Router} from "@angular/router";
     <p>
       mobile-test Works!
     </p>
-    <router-outlet></router-outlet>
+    <!--<router-outlet></router-outlet>-->
   `,
   styles: []
 })
@@ -23,11 +23,11 @@ export class MobileTestComponent implements OnInit {
 
   ngOnInit() {
     console.log("MobileTestComponent onInit()");
-    // if (this.needToRoute) {
-    //   console.log("needToRoute="+this.needToRoute);
-    //   this.needToRoute = false;
-    //   this._router.navigate(['/m']);
-    // }
+    if (this.needToRoute) {
+      console.log("needToRoute="+this.needToRoute);
+      this.needToRoute = false;
+      this._router.navigate(['/m']);
+    }
   }
 
 

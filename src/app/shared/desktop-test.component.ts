@@ -7,7 +7,7 @@ import {Router} from "@angular/router";
     <p>
       desktop-test Works!
     </p>
-    <router-outlet></router-outlet>
+    <!--<router-outlet></router-outlet>-->
   `,
   styles: []
 })

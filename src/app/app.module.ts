@@ -8,13 +8,14 @@ import {ResponsiveModule} from "ng2-responsive";
 import {AppDesktopModule} from "./desktop/app-desktop.module";
 import {AppMobileModule} from "./mobile/app-mobile.module";
 import {AppRounting} from "./app.routes";
-import { DesktopTestComponent } from './desktop-test.component';
-import { MobileTestComponent } from './mobile-test.component';
+import { DesktopTestComponent } from './shared/desktop-test.component';
+import { MobileTestComponent } from './shared/mobile-test.component';
 import { SignInComponent } from './authentication/sign-in.component';
 import { SignUpComponent } from './authentication/sign-up.component';
 import { HeaderComponent } from './shared/header.component';
 import {AuthService} from "./shared/auth.service";
 import {AuthGuard} from "./shared/auth.guard";
+import { HomeComponent } from './shared/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {AuthGuard} from "./shared/auth.guard";
     MobileTestComponent,
     SignInComponent,
     SignUpComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

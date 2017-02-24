@@ -25,7 +25,7 @@ var AuthService = (function () {
         firebase.auth().signInWithEmailAndPassword(user.email, user.password)
             .then(function (result) {
             console.log("User (" + user.email + ") signed in.");
-            _self.router.navigate(['/']);
+            _self.router.navigate(['/home']);
         }, function (error) {
             console.log(error);
             // Handle Errors here.
@@ -46,12 +46,30 @@ var AuthService = (function () {
         });
     };
     AuthService.prototype.isAuthenticated = function () {
+        // firebase.auth().onAuthStateChanged(function(user) {
+        //     if (user) {
+        //         // User is signed in.
+        //         return true;
+        //     } else {
+        //         // No user is signed in.
+        //         return false;
+        //     }
+        // });
         var user = firebase.auth().currentUser;
         if (user) {
             return true; // User is signed in.
         }
         else {
             return false; // No user is signed in.
+        }
+    };
+    AuthService.prototype.getLoggedInUserName = function () {
+        var user = firebase.auth().currentUser;
+        if (user) {
+            return user.email; // User is signed in.
+        }
+        else {
+            return 'No User Logged In'; // No user is signed in.
         }
     };
     AuthService = __decorate([

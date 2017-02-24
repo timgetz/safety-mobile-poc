@@ -4,7 +4,7 @@ import {AppMobileComponent} from "./app-mobile.component";
 import {UserListComponent} from "./user-list/user-list.component";
 
 const MOBILE_ROUTES: Routes = [
-    { path: '', component: AppMobileComponent },
+     { path: 'm', component: AppMobileComponent },
     { path: 'list', component: UserListComponent }
 ];
 

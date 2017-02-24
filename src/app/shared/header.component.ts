@@ -12,14 +12,16 @@ import {AuthService} from "./auth.service";
         
 
                         <li><a [routerLink]="['m']">Mobile Site</a></li>
-                        <li><a [routerLink]="['desktop']">Desktop Site</a></li>
+                        <li><a [routerLink]="['home']">Desktop Site</a></li>
                         <li><a [routerLink]="['protected']">Protected</a></li>
         
                     </ul>
                     <ul class="nav navbar-nav navbar-right" *ngIf="isAuth()">
+                        <li><a>{{getLoggedInUserName()}}</a></li>
                         <li><a (click)="onLogout()">Logout</a></li>
                     </ul>
                      <ul class="nav navbar-nav navbar-right" *ngIf="!isAuth()">
+                        <li><a>{{getLoggedInUserName()}}</a></li>
                         <li><a [routerLink]="['signup']">Sign Up</a></li>
                         <li><a [routerLink]="['signin']">Sign In</a></li>
                     </ul>     
@@ -45,6 +47,10 @@ export class HeaderComponent implements OnInit {
 
   onLogout() {
     this.authService.logout();
+  }
+
+  getLoggedInUserName() {
+    return this.authService.getLoggedInUserName();
   }
 
 }
