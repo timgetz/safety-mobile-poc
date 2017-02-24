@@ -36,3 +36,5 @@ import 'zone.js/dist/zone';
 // NgClass on SVG elements
 // Needed for: IE10, IE11
 // import 'classlist.js';
+
+import 'web-animations-js/web-animations.min';

@@ -1,4 +1,10 @@
 <p>
   app-mobile works!
 </p>
+
+<button (click)="toggleMenu()" class="hamburger">
+  <span>toggle menu</span>
+</button>
+
 <button [routerLink]="['list']">Go to list</button>
+<st-mobile-sliding-panel [@slideInOut]="menuState"></st-mobile-sliding-panel>
