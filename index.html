@@ -7,8 +7,23 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+<link href="styles.e711a0a515e5dd9d1515.bundle.css" rel="stylesheet"/></head>
 <body>
   <app-root>Loading...</app-root>
-<script type="text/javascript" src="inline.9d00d9ba16d9bbbfaa21.bundle.js"></script><script type="text/javascript" src="polyfills.282e948f561ff18ef157.bundle.js"></script><script type="text/javascript" src="main.b33716e44522d4375760.bundle.js"></script></body>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+  <script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyCA7RDGTUUbImJuJ4loO_neVhYsYizRgXE",
+          authDomain: "safety-auth.firebaseapp.com",
+          databaseURL: "https://safety-auth.firebaseio.com",
+          messagingSenderId: "975889633232"
+      };
+      firebase.initializeApp(config);
+  </script>
+  <!-- Polyfill for sliding menu-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>-->
+
+<script type="text/javascript" src="inline.08de979a63b52d25354f.bundle.js"></script><script type="text/javascript" src="polyfills.ff3a7acf25d2a91330e1.bundle.js"></script><script type="text/javascript" src="main.0ae27fc154a094bcad22.bundle.js"></script></body>
 </html>
