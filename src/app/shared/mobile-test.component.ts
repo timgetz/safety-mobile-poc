@@ -4,9 +4,9 @@ import {Router} from "@angular/router";
 @Component({
   selector: 'st-mobile-test',
   template: `
-    <p>
-      mobile-test Works!
-    </p>
+    <!--<p>-->
+      <!--mobile-test Works!-->
+    <!--</p>-->
     <!--<router-outlet></router-outlet>-->
   `,
   styles: []

@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
     <p>
       You are home.
     </p>
-    <st-desktop-test *isChrome></st-desktop-test>
-    <st-mobile-test *isSafari></st-mobile-test>
+    <button [routerLink]="['/dashboard']">Go to Dashboard</button>
+    <!--<st-desktop-test *isChrome></st-desktop-test>-->
+    <st-mobile-test *isMobile></st-mobile-test>
   `,
   styles: []
 })
